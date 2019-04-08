@@ -3,18 +3,22 @@ export const TOGGLE_ITEM = 'TOGGLE_ITEM';
 
 
 
-export function addToDo(newTodo) {
-    console.log(newTodo);
+export const addToDo = newTodo => {
+ console.log(newTodo);
     return {
         type: ADD_TODO,
         payload: newTodo
-    }
 }
+   
+    }
 
-export function toggleItem(index) {
+
+export const  toggleItem = index =>  {
     console.log('action', index)
     return {
         type: TOGGLE_ITEM,
         payload: index
     }
 }
+
+//type gets passed as function name in todolist//

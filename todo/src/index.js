@@ -5,8 +5,9 @@ import App from './App';
 //redux imports//
 import { createStore } from 'redux';
 import { Provider } from 'react-redux'
+import reducer from './reducers/reducer';
 
-const store = createStore(todos)
+const store = createStore(reducer)
 
 
 
